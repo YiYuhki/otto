@@ -1,6 +1,6 @@
 # otto
 
-[![GoDoc Reference](https://pkg.go.dev/badge/github.com/robertkrimen/otto.svg)](https://pkg.go.dev/github.com/robertkrimen/otto)
+[![GoDoc Reference](https://pkg.go.dev/badge/github.com/YiYuhki/otto.svg)](https://pkg.go.dev/github.com/YiYuhki/otto)
 
 ## Basic Usage
 
@@ -10,7 +10,7 @@ To use import it with the following:
 
 ```go
 import (
-   "github.com/robertkrimen/otto"
+   "github.com/YiYuhki/otto"
 )
 ```
 
@@ -109,7 +109,7 @@ result, _ = vm.Run(`
 A separate parser is available in the parser package if you're just interested
 in building an AST.
 
-[![GoDoc Reference](https://pkg.go.dev/badge/github.com/robertkrimen/otto/parser.svg)](https://pkg.go.dev/github.com/robertkrimen/otto/parser)
+[![GoDoc Reference](https://pkg.go.dev/badge/github.com/YiYuhki/otto/parser.svg)](https://pkg.go.dev/github.com/YiYuhki/otto/parser)
 
 Parse and return an AST
 
@@ -136,10 +136,10 @@ program, err := parser.ParseFile(nil, filename, src, 0)
 ## Setup
 
 You can run (Go) JavaScript from the command line with
-[otto](http://github.com/robertkrimen/otto/tree/master/otto).
+[otto](http://github.com/YiYuhki/otto/tree/master/otto).
 
 ```shell
-go install github.com/robertkrimen/otto/otto@latest
+go install github.com/YiYuhki/otto/otto@latest
 ```
 
 Run JavaScript by entering some source on stdin or by giving otto a filename:
@@ -155,14 +155,14 @@ import:
 
 ```go
 import (
-    "github.com/robertkrimen/otto"
-    _ "github.com/robertkrimen/otto/underscore"
+    "github.com/YiYuhki/otto"
+    _ "github.com/YiYuhki/otto/underscore"
 )
 
 // Now every otto runtime will come loaded with underscore
 ```
 
-For more information: [underscore](http://github.com/robertkrimen/otto/tree/master/underscore)
+For more information: [underscore](http://github.com/YiYuhki/otto/tree/master/underscore)
 
 ## Caveat Emptor
 
@@ -209,7 +209,7 @@ import (
     "os"
     "time"
 
-    "github.com/robertkrimen/otto"
+    "github.com/YiYuhki/otto"
 )
 
 var halt = errors.New("Stahp")
@@ -263,7 +263,7 @@ Typically, they belong to the `window` object (in the browser). It would not be
 difficult to provide something like these via Go, but you probably want to wrap
 otto in an event loop in that case.
 
-For an example of how this could be done in Go with otto, see [natto](http://github.com/robertkrimen/natto).
+For an example of how this could be done in Go with otto, see [natto](http://github.com/YiYuhki/natto).
 
 Here is some more discussion of the issue:
 

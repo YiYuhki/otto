@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/robertkrimen/otto/ast"
-	"github.com/robertkrimen/otto/file"
-	"github.com/robertkrimen/otto/underscore"
+	"github.com/YiYuhki/otto/ast"
+	"github.com/YiYuhki/otto/file"
+	"github.com/YiYuhki/otto/underscore"
 	"github.com/stretchr/testify/require"
 )
 

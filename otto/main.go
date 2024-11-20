@@ -7,8 +7,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/robertkrimen/otto"
-	"github.com/robertkrimen/otto/underscore"
+	"github.com/YiYuhki/otto"
+	"github.com/YiYuhki/otto/underscore"
 )
 
 var flagUnderscore *bool = flag.Bool("underscore", true, "Load underscore into the runtime environment")
