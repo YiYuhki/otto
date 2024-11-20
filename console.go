@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"log"
 )
 
 func formatForConsole(argumentList []Value) string {
