@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"log"
 )
 
 func formatForConsole(argumentList []Value) string {
@@ -16,7 +15,6 @@ func formatForConsole(argumentList []Value) string {
 }
 
 func builtinConsoleLog(call FunctionCall) Value {
-	log.Println("builtinColsoleLog")
 	fmt.Fprintln(os.Stdout, formatForConsole(call.ArgumentList)) //nolint:errcheck // Nothing we can do if this fails.
 	return Value{}
 }
